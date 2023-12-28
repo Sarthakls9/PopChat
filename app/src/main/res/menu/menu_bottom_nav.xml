@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/idSong"
+        android:title="Songs"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/outline_library_music_24"/>
+
+    <item
+        android:id="@+id/idSearch"
+        android:title="Search"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_search_24"/>
+
+    <item
+        android:id="@+id/idFind"
+        android:title="Find"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_people_alt_24"/>
+
+    <item
+        android:id="@+id/idChat"
+        android:title="Chat"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_chat_24"/>
+
+</menu>

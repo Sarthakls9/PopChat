@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "230178669729",
+    "project_id": "popchat-59052",
+    "storage_bucket": "popchat-59052.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230178669729:android:b98f7ef11c34cdffa61ce0",
+        "android_client_info": {
+          "package_name": "com.example.popchat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkGTll3uOBPSrZ0YoUJO8AHdwJnKvzVC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

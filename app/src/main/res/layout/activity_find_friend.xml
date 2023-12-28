@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".FindFriend">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchFriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/searchbar"
+        android:focusable="false"
+        app:closeIcon="@drawable/baseline_clear_24"
+        app:iconifiedByDefault="false"
+        app:queryHint="Find Friend ..."
+
+        app:searchHintIcon="@null"
+        app:searchIcon="@drawable/topline_search_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friendRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/searchFriend"
+        app:layout_constraintStart_toStartOf="@+id/searchFriend"
+        tools:listitem="@layout/user_layout"
+        android:layout_above="@id/pagerMain"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pagerMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp"
+        android:translationZ="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:itemIconTint="@color/color_item_bottom_nav"
+            android:background="@color/light_black"
+            app:itemTextColor="@color/color_item_bottom_nav"
+            app:menu="@menu/menu_bottom_nav"
+            app:itemRippleColor="@android:color/transparent"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
